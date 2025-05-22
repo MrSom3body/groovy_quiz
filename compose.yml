@@ -1,0 +1,8 @@
+services:
+  php:
+    image: php:apache
+    restart: always
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "127.0.0.1:8888:80"

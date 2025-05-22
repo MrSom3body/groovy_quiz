@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+<quiz>
+  <category id="c1" name="Linux">
+    <subcategory id="s1" name="Window Manager">
+      <question id="q1" text="Which window manager is the best?" type="single">
+        <answer correct="true">hyprland</answer>
+        <answer correct="false">awesomeWM</answer>
+        <answer correct="false">i3</answer>
+      </question>
+      <question id="q2" text="What is the greatest terminal emulator?" type="single">
+        <answer correct="false">alacritty</answer>
+        <answer correct="true">foot</answer>
+        <answer correct="false">kitty</answer>
+      </question>
+      <question id="q3" text="What is the best keybinding to open a terminal?" type="single">
+        <answer correct="false">Ctrl + Alt + T</answer>
+        <answer correct="true">Super + T</answer>
+        <answer correct="false">Alt + T</answer>
+      </question>
+    </subcategory>
+    <subcategory id="s2" name="Bash">
+      <question id="q4" text="How do you run a command in the background?" type="single">
+        <answer correct="false">command &amp;&amp;</answer>
+        <answer correct="false">bg command</answer>
+        <answer correct="true">command &amp;</answer>
+      </question>
+      <question id="q5" text="How would you detach a command that is running in the background?" type="single">
+        <answer correct="true">disown</answer>
+        <answer correct="false">detach</answer>
+        <answer correct="false">bg</answer>
+      </question>
+      <question id="q6" text="What does bash stand for?" type="single">
+        <answer correct="false">Bashful Association Shell</answer>
+        <answer correct="false">Breunig Außer Sich</answer>
+        <answer correct="true">Bourne Again Shell</answer>
+      </question>
+    </subcategory>
+  </category>
+  <category id="c2" name="Programming">
+    <subcategory id="s3" name="General Programming">
+      <question id="q7" text="What is a variable in programming?" type="single">
+        <answer correct="true">A named storage location that stores data.</answer>
+        <answer correct="false">A type of loop structure.</answer>
+        <answer correct="false">A function in a programming language.</answer>
+      </question>
+      <question id="q8" text="What is a function in programming?" type="single">
+        <answer correct="true">A named section of a program that performs a specific task.</answer>
+        <answer correct="false">A type of variable.</answer>
+        <answer correct="false">A conditional statement.</answer>
+      </question>
+      <question id="q9" text="What is a loop in programming?" type="single">
+        <answer correct="true">A control flow statement that allows code to be executed repeatedly.</answer>
+        <answer correct="false">A data structure that stores multiple values.</answer>
+        <answer correct="false">A type of function.</answer>
+      </question>
+    </subcategory>
+    <subcategory id="s4" name="Web Development">
+      <question id="q10" text="What is HTML?" type="single">
+        <answer correct="true">A markup language used for creating web pages.</answer>
+        <answer correct="false">A programming language for creating web applications.</answer>
+        <answer correct="false">A database management system.</answer>
+      </question>
+      <question id="q11" text="What is CSS?" type="single">
+        <answer correct="true">A styling language used for styling web pages.</answer>
+        <answer correct="false">A programming language for creating server-side scripts.</answer>
+        <answer correct="false">A scripting language used for client-side web development.</answer>
+      </question>
+      <question id="q12" text="What is JavaScript?" type="single">
+        <answer correct="true">A scripting language used for client-side web development.</answer>
+        <answer correct="false">A programming language for creating server-side scripts.</answer>
+        <answer correct="false">A markup language for creating web pages.</answer>
+      </question>
+    </subcategory>
+  </category>
+</quiz>

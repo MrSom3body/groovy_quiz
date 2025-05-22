@@ -1,0 +1,25 @@
+<!ELEMENT quiz (category+)>
+<!ELEMENT category (subcategory+)>
+<!ATTLIST category
+    id      ID      #REQUIRED
+    name    CDATA   #REQUIRED
+>
+
+<!ELEMENT subcategory (question+)>
+<!ATTLIST subcategory
+    id      ID      #REQUIRED
+    name    CDATA   #REQUIRED
+>
+
+<!ELEMENT question (answer+)>
+<!ATTLIST question
+    id      ID      #REQUIRED
+    text    CDATA   #REQUIRED
+    type    (single|multiple|truefalse) "single"
+>
+
+<!ELEMENT answer (#PCDATA)>
+<!ATTLIST answer
+    correct (true|false)   #REQUIRED
+>
+

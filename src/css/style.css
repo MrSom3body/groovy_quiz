@@ -1,0 +1,91 @@
+@import "gruvbox.css";
+
+* {
+  color: var(--foreground);
+}
+
+body {
+  font-family: "Ubuntu Nerd Font", system-ui;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+
+header {
+  height: max-content;
+  margin: 20px 20px 10px 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--foreground);
+}
+
+header * {
+  color: var(--background);
+}
+
+a {
+  text-decoration: var(--blue) underline;
+  color: var(--blue);
+}
+
+section,
+article,
+form {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 10px 10px 10px;
+}
+
+section a,
+form input {
+  font-size: 3em;
+}
+
+article div {
+  font-size: 1.5em;
+}
+
+section a,
+article div,
+form input {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: calc(100% - 10px); /* Adjust for 3 buttons */
+  margin: 10px;
+  padding: 10px 30px;
+  transition:
+    box-shadow 0.5s,
+    transform 0.5s;
+  white-space: normal; /* Allow text to wrap */
+  text-decoration: none;
+  word-wrap: break-word; /* Break words if they exceed the container */
+  color: var(--background);
+  border: none;
+  border-radius: 10px;
+  box-shadow: black;
+}
+
+section a:hover,
+form input:hover {
+  transition:
+    box-shadow 0.5s,
+    transform 0.5s;
+  transform: scale(0.9); /* Scale up and reset translation on hover */
+}
+
+@media (min-width: 768px) {
+  form input {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust for 3 buttons */
+    max-width: calc(33.33% - 20px); /* Adjust for 3 buttons */
+  }
+}
